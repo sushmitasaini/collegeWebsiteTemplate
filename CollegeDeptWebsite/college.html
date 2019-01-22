@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>G.L Bajaj</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,700,500" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<style>
+		.navbar 
+		        {
+                   margin-bottom: 0;
+                   background-color:#9ACD32;
+				   z-index: 9999;
+                   border: 0;
+                   line-height: 1.42857143;
+                   border-radius: 0;
+                   font-family: 'Roboto', sans-serif;
+				}
+		  
+		  /*.navbar li a, .navbar .navbar-brand 
+		        {
+                   color: white		   !important;
+				   font-family: 'Roboto', sans-serif; 
+				   font-size: 18px;
+                }*/
+          .navbar-default .navbar-nav>li>a {
+            color: #fff;
+                }
+          
+		  .navbar-nav li a:hover, .navbar-nav li.active a
+        		{
+                   color: #9ACD32 !important;
+                   background-color: #ffffff !important;
+                }
+          
+		  .navbar-default .navbar-toggle 
+		        {
+                   border-color: transparent;
+                   color: #9ACD32  !important;
+                }
+		   .navbar-default .navbar-nav > .dropdown > a .caret{
+	               border-top-color: #fff;
+                   border-bottom-color: #fff;
+            }
+           .navbar-default .navbar-brand{
+	               color:#fff;
+            }
+           .menu-large {
+                   position: static !important;
+            }
+           .megamenu{
+                   padding: 20px 0px;
+                   width:100%;
+            }
+           .megamenu> li > ul {
+                   padding: 0;
+                   margin: 0;
+            }
+           .megamenu> li > ul > li {
+                   list-style: none;
+				   color:black;
+            }
+           .megamenu> li > ul > li > a {
+                   display: block;
+                   padding: 3px 20px;
+                   clear: both;
+                   font-weight: normal;
+                   line-height: 1.428571429;
+                   color: #000000;
+                   white-space: normal;
+                   font-size:15px;
+            }
+           .megamenu> li ul > li > a:hover,
+           .megamenu> li ul > li > a:focus {
+                   text-decoration: none;
+                   color:#9ACD32 ;
+                   background-color: #f5f5f5;
+            }
+           .megamenu.disabled > a,
+           .megamenu.disabled > a:hover,
+           .megamenu.disabled > a:focus {
+                   color: #999999;
+            }
+           .megamenu.disabled > a:hover,
+           .megamenu.disabled > a:focus {
+                   text-decoration: none;
+                   background-color: transparent;
+                   background-image: none;
+                   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+                   cursor: not-allowed;
+            }
+           .megamenu.dropdown-header {
+                   color: #428bca;
+                   font-size: 18px;
+            }
+           @media (max-width: 768px) {
+           .megamenu{
+                   margin-left: 0 ;
+                   margin-right: 0 ;
+            }
+           .megamenu> li {
+                   margin-bottom: 30px;
+				   color::#9ACD32;
+            }
+           .megamenu> li:last-child {
+                   margin-bottom: 0;
+            }
+           .megamenu.dropdown-header {
+                   padding: 3px 15px !important;
+
+            }
+           .navbar-nav .open .dropdown-menu .dropdown-header{
+	               color:#fff;
+            }
+		   }
+		   .carousel-inner > .item > img,
+		   .carousel-inner > .item > a > img {
+					width: 70%;
+					margin: auto;
+			}
+		   .carousel-inner > .item > img{
+					width:1400px;
+					height:500px;
+			}
+			p1{
+				color:#9ACD32;
+				font-family:'Pacifico', cursive;
+				font-size:25px;
+			}
+			 
+		   p2   {
+		           font-family: 'Roboto', sans-serif; 
+                   font-size: 17px; 
+		           color:#333366 ; 
+		           font-weight:600;
+		           text-align:center;
+		           padding-top:30px;
+		        }
+			p12  {
+		           text-align:left;
+			       font-family: 'Roboto', sans-serif;
+			       font-size: 16px; 
+			       color:#556B2F;
+			       font-weight:400;
+		        }
+			p3{
+				font-family: 'Roboto', sans-serif; 
+				font-size: 20px; 
+				font-weight:400; 
+				color:#99FFCC;
+			}
+			p3{
+				font-family: 'Roboto', sans-serif; 
+				font-size: 20px; 
+				font-weight:400; 
+				color:#696969;
+			}
+			p4{
+				font-family: 'Roboto', sans-serif; 
+				font-size: 15px; 
+				font-weight:400; 
+				color:black;
+			}
+			p5{
+				font-family: 'Roboto', sans-serif; 
+				font-size: 18px;
+				font-weight:400;
+				color:black;
+			}
+			p6{
+				font-family: 'Roboto', sans-serif; 
+				font-size: 15px; 
+				font-weight:400; 
+				color:black;
+			}
+			.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+
+			.embed-responsive.embed-responsive-16by9 {
+				padding-bottom: 56.25%;
+			}
+
+			.embed-responsive.embed-responsive-4by3 {
+				padding-bottom: 75%;
+			}
+			p10
+			{
+				font-family: 'Roboto', sans-serif;
+				font-weight:400; 
+				font-size: 30px; 
+				color:#9ACD32;
+			}
+			p9
+			{
+				font-family: 'Roboto', sans-serif;
+				font-weight:100; 
+				font-size: 18px; 
+				color:black;
+			}
+	</style>
+</head>
+<body>
+    <nav id="Header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container" style="padding-left: 10px">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="glbajaj-logo.png">
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="padding-top:10px">
+                    <!--<li>
+                        <a href="#">Home</a>
+                    </li>-->
+				<div ailgn="right">
+					<img src="btech-admission2016.png">
+					<img src="glbajaj-college-code.png">
+					<img src="pgdm-admission.png">
+				</div>
+                    <li class="dropdown menu-large">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" onclick="changeCategory('ios')">About Us<b class="caret"></b></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3" >
+								<center>
+                                <p1 align="center">"The expert in anything was once a beginner."</p1>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" style="color:#9ACD32;text-decoration:none;" class="thumbnail"><img src="Chairman.jpg" /><p style="font-size:20px;" align="center">Chairman</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" style="color:#9ACD32;text-decoration:none;" class="thumbnail"><img src="Chairman.jpg" /><p style="font-size:20px;" align="center">Vice-chairman</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" style="color:#9ACD32;text-decoration:none;" class="thumbnail"><img src="Chairman.jpg" /><p style="font-size:20px;" align="center">Director</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" style="color:#9ACD32;text-decoration:none;" class="thumbnail"><img src="Chairman.jpg" /><p style="font-size:20px;" align="center">Head Professor</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="changeCategory('windows')">Programmes<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+								<center>
+                                <p1>"The capacity to leanrn is a gift,the ability to learn is a skill,the willingness to learn is a choice."</p1>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="thumbnail" style="color:#9ACD32;text-decoration:none;"><img src="computer-science.jpg" /><p style="font-size:20px;" align="center">Computer Science</p></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" class="thumbnail" style="color:#9ACD32;text-decoration:none;"><img src="Electronic-Engineering-after-12th-science.jpg" /><p style="font-size:20px;" align="center">Electronics Engineering</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" class="thumbnail" style="color:#9ACD32;text-decoration:none;"><img src="u2254_602x312.jpg" /><p style="font-size:20px;" align="center">Electrical Engineering</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" class="thumbnail" style="color:#9ACD32;text-decoration:none;"><img src="IMG-07-07-2014-053250.jpg" /><p style="font-size:20px;" align="center">Mechanical Engineering</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" onclick="changeCategory('Swift')">Training and Placement<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <center>
+                                <p1>Our Recruitors</p1>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" style="color:#9ACD32;text-decoration:none;" class="thumbnail"><img src="igate.jpg" /><p style="font-size:20px;" align="center">igate</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" style="color:#9ACD32;text-decoration:none;" class="thumbnail"><img src="nttdata.jpg" /><p  style="font-size:20px;" align="center">NTTDATA</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" style="color:#9ACD32;text-decoration:none;" class="thumbnail"><img src="polaris.jpg" /><p  style="font-size:20px;" align="center">Plaris</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="#" style="color:#9ACD32;text-decoration:none;" class="thumbnail"><img src="infogain.jpg" /><p  style="font-size:20px;" align="center">infogain</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+					<li>
+						<a href="contact.html">Contact Us</a>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<div class="container-fluid">
+	<br>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li data-target="#myCarousel" data-slide-to="5"></li>
+			</ol>
+
+    <!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+
+			<div class="item active">
+				<img src="b_AllSoulsquad.jpg" alt="Chania" width="1160" height="345">
+				<div class="carousel-caption">
+					<h3>Infrastructure</h3>
+					<p>College provides full facility infrastructure.</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="place.jpg" alt="Flower" width="1160" height="345">
+				<div class="carousel-caption">
+					<h3>100% Placement</h3>
+					<p style="color:black">Placements in reputed companies.</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="H1153-hires.14973-19SevenoaksAve201.jpg" alt="Chania" width="60" height="345">
+				<div class="carousel-caption">
+					<h3>Hostel</h3>
+					<p>Facility of campus hostel with full security..</p>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="Sevenoaks-School.jpg" alt="Flower" width="1160" height="345">
+				<div class="carousel-caption">
+					<h3>Auditorium</h3>
+					<p>An auditorium of 300+ students capacity for multiple events.</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="collunivclass.jpg" alt="Flower" width="1160" height="345">
+				<div class="carousel-caption">
+					<h3>Classrooms</h3>
+					<p>Fully furnitured air-conditioned classrooms.</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="mss.jpg" alt="Flower" width="1160" height="345">
+				<div class="carousel-caption">
+					<h3>Mess</h3>
+					<p>Proper mess for the hostelers.</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="lab.jpg" alt="Flower" width="1160" height="345">
+				<div class="carousel-caption">
+					<h3>Labs</h3>
+					<p>Different labs according to courses.</p>
+				</div>
+			</div>
+		</div>
+    <!-- Left and right controls -->
+    </div>
+	<section style="background-color:#F8F8F8;padding-top:30px;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-1">
+				</div>
+                <div class="col-sm-3" class="news">
+					<div class="col-sm-12">
+						<center>
+							<p2>Events</p2><br>
+                    </div><br><br><br>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <p12>17 September 2016</p12><br>
+                        </div>
+                        <div class="col-sm-6" class="whtsnew">
+                            <p12>Vishwakarma Pooja</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <p12>16 September 2016</p12><br>
+                        </div>
+                        <div class="col-sm-6">
+                            <p12>‎GL Bajaj Rotaract Club Blood Donation Camp﻿</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <p12>13 September 2016</p12><br>
+                        </div>
+                        <div class="col-sm-6">
+                            <p12>Inauguration of TTL-GLBITM Design Innovation Centre﻿</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+				</div>
+                <div class="col-sm-4" class="news">
+                    <div class="col-sm-12">
+						<center>
+                            <p2>Achievements & Press Release</p2><br>
+					</div><br><br><br>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <img src="appfordatabase.jpg" class="image-responsive">
+                        </div>
+                        <div class="col-sm-6" class="whtsnew">
+                            <p12>App for Database of house owners, tenants and workers</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <img src="humanoidrobot.jpg" class="image-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            <p12>Humanoid robot ready to befriend your lonely kid,</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <img src="home-press6.jpg" class="image-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            <p12>Best Engineering Award</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+					<div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <img src="home-press6.jpg" class="image-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            <p12>Collaboration with APS-Germany, a leading organization in the areas of robotics</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+				</div>
+                <div class="col-sm-3" class="news">
+                    <div class="col-sm-12">
+						<center>
+                            <p2>Excellence and Incubation</p2><br>
+                    </div><br><br><br>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <img src="glbajaj_microsoft.png" class="image-responsive">
+                        </div>
+                        <div class="col-sm-6" class="whtsnew">
+                            <p12>First Microsoft Innovation Center(MIC), in the North Region</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <img src="glbajaj_cisco.png" class="image-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            <p12>First CISCO Networking Academy in Greater Noida</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <img src="glbajaj_robotic.png" class="image-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            <p12>Advance Robotics Lab, APS Germany, First Advanced Remote Robotics Lab in NCR</p12><br><br>
+                            <br><br>
+                        </div>
+                    </div>
+				</div>
+            </div>
+		</div>
+	</section>
+	<section id="aboutSection" style="padding-top:100px; padding-bottom:140px; background-color:#D3D3D3;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<p10>About G.L Bajaj</p10><br><br><br><br>
+					<p9>G L Bajaj, innovation is defined as the translation of knowledge and technologies in the form of 
+					newer and better products and services. Being innovative adds value to our graduates' education and 
+					training, which gives them the extra edge and ultimately increases their employability.</p9>
+				</div>
+				<div class="col-sm-6">
+					<div class="embed-responsive embed-responsive-16by9 wow pulse">
+						<iframe width="350" height="315" src="https://www.youtube.com/embed/hgi2MYAFgE8" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section style="background-color:#F8C45A;padding-top:30px;padding-bottom:20px">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4" align="center">
+					<img src="apjkalam.jpg" class="img-reponsive img-circle"><br>
+					<p3>Dr. A. P. J. Abdul Kalam, Hon'ble Former President of India</p3><br><br><br>
+					<p4><i>I am indeed delighted to address and interact with the GLBIANS. I am happy that GL Bajaj have a number disciplines under engineering 
+					are needed for the country</i></p4>
+				</div>
+				<div class="col-sm-4" align="center">
+					<img src="hrd.jpg" class="img-reponsive img-circle"><br>
+					<p3>Dr.Kiran Bedi, Social Activist and a Retired IPS officer</p3><br><br><br>
+					<p4><i>Dr. Kiran Bedi blessed ‪‎GLBians‬ with her presence on the concluding day of 11 days orientation program</i></p4>
+				</div>
+				<div class="col-sm-4" align="center">
+					<img src="pritamsingh.jpg" class="img-reponsive img-circle"><br>
+					<p3>Padmashri Dr.Pritam Singh, Former Dean of IIM, Bangalore</p3><br><br><br>
+					<p4><i>I see this B-School as on if the B-School features some where among the top 20 B-Schools. 
+					I see great future of this place.</i></p4>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="footer" style="background-color:#F8F8F8; padding-top:20px; padding-bottom:20px">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3" style="padding:25px">
+					<p5>Quick Links</p5><br>
+					<p6> 
+						Link 1 <br>
+						Link 2 <br>
+						Link 3 <br>
+						Link 4 <br>
+						Link 5 <br>
+					</p6>	
+				</div>
+				<div class="col-sm-3" style="padding:25px">
+					<p5>Training and Placements</p5><br>
+					<p6>
+						Corporate Resource Centre<br>
+						Training & Placements<br>
+						Our Recruiters<br>
+						Placements Records<br>
+						Corporate Advisory Board<br>
+						Industrial Visit<br>
+					</p6>
+				</div>
+				<div class="col-sm-3" style="padding:25px">
+					<p5>Other Links</p5><br>
+					<p6>
+						Privacy Policy<br>
+						Copyrights<br>
+						FAQ<br>
+						Site Map<br>
+					</p6>
+				</div>
+				<div class="col-sm-3" style="padding:25px">
+					<p5>Social Presence</p5><br>
+					<p6>
+						Facebook<br>
+						Twitter<br>
+						Google+<br>
+						Linkedin<br>
+						Pinterest<br>
+					</p6>
+				</div>
+				<div class="col-sm-12" style="padding:10px" align="center">
+					<p5>@2005 G.L Bajaj.All Rights Reserved.</p5>
+				</div>
+			</div>
+		</div>
+	</section>
+	</body>
+	<script>
+        // Dropdown Menu Fade
+        jQuery(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop().fadeIn("fast");
+                },
+                function () {
+                    $('.dropdown-menu', this).stop().fadeOut("fast");
+                });
+        });
+    </script>
+<html>
